@@ -12,5 +12,23 @@ Pizza.prototype.cost = function() {
     xl: 16.00
   }
 
-  return (priceBySize[this.size] + this.toppings.length * .50) * (1 + salesTax);
+  return (Math.floor(((priceBySize[this.size] + this.toppings.length * .50) * (1 + salesTax)) * 100)/100).toFixed(2);
 };
+
+$(function() {
+  $("#cost-calc").on("submit", function(e) {
+    e.preventDefault();
+
+    var size = $("#size").val();
+    var toppings = [];
+    $("#toppings input:checked").each(function(value) {
+      toppings.push(value);
+    });
+
+    var pizza = new Pizza(size, toppings);
+    $(".result").empty();
+    $(".result").append("<h3>" + pizza.size + "</h3>")
+    $(".result").append("<h3>" + pizza.toppings + "</h3>")
+    $(".result").append("<h3>$" + pizza.cost() + "</h3>")
+  })
+})
