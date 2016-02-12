@@ -28,25 +28,38 @@
         <label for="toppings">Select toppings</label>
         <div class="checkbox" id="toppings" name="toppings">
           <label>
-            <input type="checkbox"> Cheese
+            <input type="checkbox" value="cheese"> Cheese
           </label>
           <label>
-            <input type="checkbox"> Pepperoni
+            <input type="checkbox" value="pepperoni"> Pepperoni
           </label>
           <label>
-            <input type="checkbox"> Sausage
+            <input type="checkbox" value="Bacon"> Bacon
           </label>
           <label>
-            <input type="checkbox"> Mushrooms
+            <input type="checkbox" value="sausage"> Sausage
           </label>
           <label>
-            <input type="checkbox"> Peppers
+            <input type="checkbox" value="mushrooms"> Mushrooms
+          </label>
+          <label>
+            <input type="checkbox" value="peppers"> Peppers
+          </label>
+          <label>
+            <input type="checkbox" value="olives"> Olives
+          </label>
+          <label>
+            <input type="checkbox" value="anchovies"> Anchovies
           </label>
         </div>
         <button class="btn btn-success" type="submit" name="cost">Calculate Cost</button>
       </form>
       <div class="result">
       </div>
+      <div id="total">
+        <h3></h3>
+      </div>
+      <button class="btn btn-danger">Clear Order</button>
     </div>
   </body>
 </html>

@@ -8,6 +8,6 @@ describe('Pizza', function() {
   });
 
   it("calculates the cost of a pizza", function() {
-    expect(testPizza.cost()).to.equal(16.80)
+    expect(testPizza.cost()).to.equal('16.80')
   });
 })
