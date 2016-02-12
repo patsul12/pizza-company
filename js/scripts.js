@@ -31,7 +31,7 @@ $(function() {
 
     var pizza = new Pizza(size, toppings);
     pizzas.push[pizza];
-    $(".result").append("<h4>Size:" + pizza.size + "</h3>");
+    $(".result").append("<h4>Size: " + pizza.size + "</h3>");
     $(".result").append("<h4>Toppings:</h3><ul>");
     for(var i in pizza.toppings) {
       $(".result").append("<li>" + pizza.toppings[i] + "</li>");
