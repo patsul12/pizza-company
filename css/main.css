@@ -1,0 +1,12 @@
+.pizza-img {
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+}
+
+.header {
+  margin: auto;
+  color: indianred;
+  font-family: helvetica sans-serif;
+  font-weight: bold;
+}
